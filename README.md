@@ -64,6 +64,3 @@ Struktur
         ├── custom-1.less
         ├── ...
         └── custom-n.less
-
-
-template.html: Template untuk memakai kode dari prototipe Pingendo
