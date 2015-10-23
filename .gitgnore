@@ -1,0 +1,11 @@
+.DS_Store
+prototype/.DS_Store
+prototype/css/.DS_Store
+web-assets/
+other-assets/
+lain-lain/
+public/css/bootstrap.css.map
+public/css/bootstrap.css
+*.sublime-project
+*.sublime-workspace
+*.codekit
