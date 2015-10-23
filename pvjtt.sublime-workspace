@@ -1,0 +1,487 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"paddin",
+				"padding-bottom"
+			],
+			[
+				"p",
+				"php	<?php … ?>"
+			],
+			[
+				"file_",
+				"file_get_contents"
+			],
+			[
+				"inc",
+				"include"
+			],
+			[
+				"h",
+				"href	Attr"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"im",
+				"img	Tag"
+			],
+			[
+				"s",
+				"style	Attr"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"rig",
+				"margin-right"
+			],
+			[
+				"ri",
+				"right"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"ali",
+				"text-align"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"di",
+				"div	Tag"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"bord",
+				"border-bottom"
+			],
+			[
+				"bo",
+				"border-bottom"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "prototype/template.html",
+			"settings":
+			{
+				"buffer_size": 1170,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 81.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			]
+		],
+		"width": 405.0
+	},
+	"console":
+	{
+		"height": 160.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/pvjtt"
+	],
+	"file_history":
+	[
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/intrface.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/itrfc1.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/ellips.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/EnhancedForDemo.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/itrfc2.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/itrfc3.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/itrfc4.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/kA.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/kB.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/kelas_abstract.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/FileApp.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/kelasA.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/DoWhileDemo.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/kelas_final.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/kelasB.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/LineNbReader.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/main_class.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/lingkaran.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/mintrface.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/MultiDimArrayDemo.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/mpaketku.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/myarray.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/Parent.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/PassPrimitiveByValue.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/PrePostDemo.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/scope.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/UnaryDemo.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/utama.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/WhileDemo.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/MyInterface.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/anak.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/ArithmeticDemo.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/ArrayCopyDemo.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/ArrayDemo.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/bapak.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/arraykA.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/bapak2.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/BitDemo.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/BlockDemo.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/BreakDemo.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/BreakWithLabelDemo.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/Child.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/ComparisonDemo.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/Demo.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/ConcatDemo.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/ConditionalDemo1.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/ConditionalDemo2.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/ConsoleInput.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/ContinueDemo.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/ContinueWithLabelDemo.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/IfElseDemo.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/InstanceofDemo.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/ForDemo.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/inheritance.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/FOutputStream.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/HelloWorld.java",
+		"/C/Users/ASUS/Desktop/Bahan Ajar Praktikum/jen.html",
+		"/C/Users/ASUS/Desktop/Bahan Ajar Praktikum/kitchen.css",
+		"/C/Users/ASUS/Desktop/Bahan Ajar Praktikum/ex1.html",
+		"/C/Users/ASUS/Desktop/Bahan Ajar Praktikum/resume.css",
+		"/C/Users/ASUS/Desktop/Bahan Ajar Praktikum/resume.html",
+		"/C/Users/ASUS/Desktop/Bahan Ajar Praktikum/ex.html",
+		"/C/Users/ASUS/Desktop/Bahan Ajar Praktikum/srt-v0.9/srt-resume.html",
+		"/C/Users/ASUS/Desktop/Bahan Ajar Praktikum/resume-master/resume-master/index.html",
+		"/F/Materi Kuliah/Tugas Akhir/Catatan Bimbingan",
+		"/C/xampp/htdocs/arduino/dbconnect.php",
+		"/C/xampp/htdocs/arduino/data_review.php",
+		"/C/xampp/htdocs/arduino/add_data.php",
+		"/C/xampp/htdocs/arduino/index.html",
+		"/F/Materi Kuliah/Tugas Akhir/FAQ",
+		"/F/Materi Kuliah/Tugas Akhir/Skripsi Azka/Pemetaan requirement dengan solusi",
+		"/F/Materi Kuliah/Tugas Akhir/Slide Sidang",
+		"/C/Users/ASUS/Desktop/Nulis Buku",
+		"/F/Materi Kuliah/Tugas Akhir/Latar Belakang Smart City Index Bandung",
+		"/F/Materi Kuliah/Tugas Akhir/Skripsi Azka/Abstrak",
+		"/F/Materi Kuliah/Tugas Akhir/Abstrak Kirim.txt",
+		"/F/Materi Kuliah/Tugas Akhir/Tes Arduino/Kalibrasi.txt",
+		"/C/xampp/htdocs/arduino/css/table.css",
+		"/C/xampp/htdocs/arduino/css/style.css",
+		"/C/xampp/htdocs/arduino/style.css",
+		"/F/Materi Kuliah/Tugas Akhir/Revisi Seminar",
+		"/C/xampp/htdocs/arduino/table.css",
+		"/C/xampp/htdocs/FAPOR/public/index.html",
+		"/C/xampp/htdocs/coba/index.php",
+		"/C/xampp/htdocs/coba/get_json.php",
+		"/C/xampp/htdocs/arduino/graf.html",
+		"/C/xampp/htdocs/arduino/data_query.php",
+		"/C/xampp/htdocs/arduino/suhu.html",
+		"/C/xampp/htdocs/arduino/coba.html",
+		"/C/xampp/htdocs/arduino/thermometer.html",
+		"/C/xampp/htdocs/omasae/app/views/admin/temperature/index.blade.php",
+		"/C/xampp/htdocs/arduino/thermometer.js",
+		"/C/xampp/htdocs/arduino/fusioncharts.php",
+		"/C/xampp/htdocs/omasae/app/controllers/BaseController.php",
+		"/C/xampp/htdocs/omasae/app/controllers/BisnisController.php",
+		"/C/xampp/htdocs/omasae/app/controllers/HomeController.php",
+		"/C/xampp/htdocs/arduino/receiver.php",
+		"/C/xampp/htdocs/adminsppdportal/sppdNIKAdd.php",
+		"/C/xampp/htdocs/adminsppdportal/sppdNIKDel.php",
+		"/C/xampp/htdocs/adminsppdportal/conn-new.php",
+		"/C/xampp/htdocs/adminsppdportal/sppdNIK.php",
+		"/C/xampp/htdocs/adminsppdportal/sppd.php",
+		"/C/xampp/htdocs/adminsppdportal/index.php",
+		"/C/xampp/htdocs/adminsppdportal/informasi.php",
+		"/C/xampp/htdocs/adminsppdportal/adminSPPD.php",
+		"/C/Users/ASUS/Downloads/led.html",
+		"/C/xampp/htdocs/FAPOR/public/notfound.html",
+		"/C/xampp/htdocs/FAPOR/public/under-cs.html",
+		"/C/xampp/htdocs/FAPOR/public/landing.html",
+		"/C/xampp/htdocs/FAPOR/public/kolom-3.html",
+		"/C/xampp/htdocs/FAPOR/public/kolom-2.html",
+		"/C/xampp/htdocs/FAPOR/public/kolom-1.html",
+		"/C/xampp/htdocs/FAPOR/public/galeri.html",
+		"/C/xampp/htdocs/FAPOR/public/error.html",
+		"/C/xampp/htdocs/FAPOR/public/berita.html",
+		"/C/xampp/htdocs/FAPOR/public/navigasi.html",
+		"/C/xampp/htdocs/FAPOR/source/less/halaman-kolom.less",
+		"/C/xampp/htdocs/FAPOR/public/nav-berita.html",
+		"/C/xampp/htdocs/FAPOR/public/kolom-3v2.html",
+		"/C/xampp/htdocs/FAPOR/public/kolom-1v2.html",
+		"/C/xampp/htdocs/FAPOR/source/less/ticker.less",
+		"/C/xampp/htdocs/FAPOR/public/css/bootstrap.css.map",
+		"/C/xampp/htdocs/FAPOR/source/less/error.less",
+		"/C/xampp/htdocs/FAPOR/source/less/under-cs.less",
+		"/C/xampp/htdocs/FAPOR/public/js/jquery.countdown.min.js",
+		"/C/xampp/htdocs/FAPOR/source/less/footer.less",
+		"/C/xampp/htdocs/FAPOR/public/footer.html",
+		"/C/xampp/htdocs/FAPOR/source/less/gambar.less"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"bootstrap",
+			"Gedung",
+			"result",
+			"apabila",
+			"container-fluid",
+			"data-lightbox",
+			"make-row",
+			"make-ro",
+			"make",
+			"imageLightbox",
+			"background",
+			"img",
+			"section",
+			"date",
+			"field-date",
+			"row masonry-container",
+			"grid-columns",
+			"col-md-3",
+			"md5",
+			" (",
+			"md5"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "prototype/template.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1170,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1108,
+								1108
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "pvjtt.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 386.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
