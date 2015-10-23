@@ -13,9 +13,9 @@ Coding
 
 Struktur File
 
-├── README.md
-├── WORKFLOW.md 
-├── lain-lain
-├── prototype (file coba-coba)
-├── public (file jadi)
-└── source (js, css, asset)
+- README.md
+- WORKFLOW.md 
+- lain-lain
+- prototype (file coba-coba)
+- public (file jadi)
+- source (js, css, asset)
