@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+
+<html ng-app="tourPackages">
+
+<head>
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/tourPackage.js"></script>
+    <!--<link href="css/navbar-fixed-top.css" rel="stylesheet">-->
+    
+<link rel="stylesheet" href="css/bootstrap.min.css" />    
+<link href="css/custom.css" rel="stylesheet">
+    
+</head>
+
+<body ng-controller="PackageController">
+
+    <div class="container mainPage panel">
+        
+    <ol class="breadcrumb">      
+      <li class="active">Home</li>
+    </ol>
+        
+    <div class="jumbotron">
+       <h1>Highlight {{1+3}}</h1>
+      <p>...</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3">
+            
+            <div class="panel panel-default">
+                <div class="panel-heading"><h3>Check Reservation</h3></div>
+                <div class="panel-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Reservation Code</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Reservation code">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="panel panel-default">
+                <div class="panel-heading"><h3>News &amp; Media</h3></div>
+                <div class="panel-body">
+                    <div class="media">
+                      <div class="media-left media-top">
+                        <a href="#">
+                          <img class="media-object" src="..." alt="...">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">News &amp; Media 1</h4>
+                        Details.
+                      </div>
+                    </div>
+                    
+                    <div class="media">
+                      <div class="media-left media-top">
+                        <a href="#">
+                          <img class="media-object" src="..." alt="...">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">News &amp; Media 2</h4>
+                        Details.
+                      </div>
+                    </div>
+                    
+                    <div class="media">
+                      <div class="media-left media-top">
+                        <a href="#">
+                          <img class="media-object" src="..." alt="...">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">News &amp; Media 3</h4>
+                        Details.
+                      </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="panel panel-default">
+                <div class="panel-heading"><h3>Customer Service</h3></div>
+                <div class="panel-body">
+                    
+                    <div class="media">
+                      <div class="media-left media-middle">
+                        <a href="#">
+                          <img class="media-object" src="..." alt="...">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Customer Service 1</h4>
+                        Active
+                      </div>
+                    </div>
+                    
+                    <div class="media">
+                      <div class="media-left media-middle">
+                        <a href="#">
+                          <img class="media-object" src="..." alt="...">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Customer Service 2</h4>
+                        Not Active
+                      </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+            <div class="col-md-9">
+        
+                
+
+            <div class="panel panel-default">
+              <div class="panel-heading"><h3>Packages</h3></div>
+              <div class="panel-body">
+                  
+
+                  <div class="row">                    
+                    <div class="col-sm-6 col-md-4" style="text-align:center" ng-repeat="product in viewProducts">
+                        <div class="thumbnail">
+                          <img src="..." alt="...">
+                          <div class="caption">
+                            <h3>{{product.name}}</h3>
+                            <p>{{product.description}}</p>
+                            <p><a href="" class="btn btn-default" role="button">Reserve</a></p>
+                          </div>
+                        </div>
+                      </div>           
+
+                </div>
+                  
+                  <nav style="text-align:center">
+                  <ul class="pagination">
+                    <li>
+                      <a href="" aria-label="Previous" ng-click="previousPage()">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li>
+                      <a href="" aria-label="Next" ng-click="nextPage()">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+            </div>    
+
+        
+        </div>
+        </div>
+    </div>
+    
+    </div>
+    
+</body>
+    
+</html>

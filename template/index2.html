@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html ng-app="pvj-tt">
+<head>    
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/page.js"></script>
+    <script type="text/javascript" src="js/tourPackage.js"></script>
+    <!--<link href="css/navbar-fixed-top.css" rel="stylesheet">-->
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css" />    
+    <link href="css/custom.css" rel="stylesheet">
+	
+	<title>Paris van Java Tour & Travel</title>
+    
+    
+
+</head>
+
+<body ng-controller="PageController as page"> 
+    
+    
+    <div class="top-image">
+        <img src="#" alt="top image">
+    </div>
+    
+    <nav class="navbar myNavbar">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Paris van Java Tour & Travel</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">About Us</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Packages <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Package A</a></li>
+            <li><a href="#">Package C</a></li>
+            <li><a href="#">Package B</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Reservation</a></li>
+        <li><a href="#">News &amp; Media</a></li>        
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+        
+    
+      
+        
+    
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Log In</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">English<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Indonesian</a></li>
+            <li><a href="#">English</a></li>
+          </ul>
+        </li>
+      </ul>
+        
+    <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Search</button>
+      </form>    
+        
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    
+    
+    
+    
+    <div class="container">
+        
+    <ol class="breadcrumb">      
+      <li class="active">Home</li>
+    </ol>
+        
+    <div class="jumbotron">
+       <h1>Highlight 1</h1>
+      <p>...</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3">
+            
+            <div class="panel panel-default">
+                <div class="panel-heading"><h3>Check Reservation</h3></div>
+                <div class="panel-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Reservation Code</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Reservation code">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="panel panel-default">
+                <div class="panel-heading"><h3>News &amp; Media</h3></div>
+                <div class="panel-body">
+                    <div class="media">
+                      <div class="media-left media-top">
+                        <a href="#">
+                          <img class="media-object" src="..." alt="...">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">News &amp; Media 1</h4>
+                        Details.
+                      </div>
+                    </div>
+                    
+                    <div class="media">
+                      <div class="media-left media-top">
+                        <a href="#">
+                          <img class="media-object" src="..." alt="...">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">News &amp; Media 2</h4>
+                        Details.
+                      </div>
+                    </div>
+                    
+                    <div class="media">
+                      <div class="media-left media-top">
+                        <a href="#">
+                          <img class="media-object" src="..." alt="...">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">News &amp; Media 3</h4>
+                        Details.
+                      </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="panel panel-default">
+                <div class="panel-heading"><h3>Customer Service</h3></div>
+                <div class="panel-body">
+                    
+                    <div class="media">
+                      <div class="media-left media-middle">
+                        <a href="#">
+                          <img class="media-object" src="..." alt="...">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Customer Service 1</h4>
+                        Active
+                      </div>
+                    </div>
+                    
+                    <div class="media">
+                      <div class="media-left media-middle">
+                        <a href="#">
+                          <img class="media-object" src="..." alt="...">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Customer Service 2</h4>
+                        Not Active
+                      </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+            <div class="col-md-9">
+        
+            <showcase></showcase>
+                
+
+        
+        </div>
+    </div>
+    
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 contact">
+                    <p>Paris van Java Tour &amp; Travel</p>
+                    <p>Jalan Setrasari Kulon No. 32</p>
+                    <p>Sukasari bandung 40152</p>
+                    <p>West Java - Indonesia</p>
+                </div>
+                <div class="col-md-1">
+                    Site Map                    
+                </div>
+                <div class="col-md-2">
+                    <ul>
+                        <li><a href='#'></a>About Us</li>
+                        <li><a href='#'></a>Packages</li>
+                        <li><a href='#'></a>Reservation</li>
+                        <li><a href='#'></a>Contact</li>
+                        <li><a href='#'></a>FAQ</li>
+                    </ul>
+                   
+                </div>
+          </div>
+        
+      </div>
+    </footer>
+    
+    <p class="copyright">Copyright Paris van Java Tour &amp; Travel 2015.</p>
+
+    <!--Script-->
+    
+    
+    
+    
+</body>
+</html>

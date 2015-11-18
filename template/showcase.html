@@ -1,0 +1,37 @@
+<div class="panel panel-default">
+  <div class="panel-heading"><h3>Packages</h3></div>
+  <div class="panel-body">
+      <div class="row">                    
+        <div class="col-sm-6 col-md-4" style="text-align:center" ng-repeat="product in pack.viewProducts">
+            <div class="thumbnail">
+              <img src="..." alt="...">
+              <div class="caption">
+                <h3>{{product.name}}</h3>
+                <p>{{product.description}}</p>
+                <p><a href="#" class="btn btn-default" role="button">Reserve</a></p>
+              </div>
+            </div>
+          </div>           
+
+    </div>
+
+      <nav style="text-align:center">
+      <ul class="pagination">
+        <li>
+          <a href="#" aria-label="Previous" ng-click="pack.previousPage()">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li>
+          <a href="#" aria-label="Next" ng-click="pack.nextPage()">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+</div>    
+
+
+</div>
+        
