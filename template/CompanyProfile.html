@@ -6,35 +6,32 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/angular.min.js"></script>
-    <script type="text/javascript" src="app.js"></script>
-    <script type="text/javascript" src="tourPackage.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/tabManager.js"></script>
     <!--<link href="css/navbar-fixed-top.css" rel="stylesheet">-->
     
-    <link rel="stylesheet" href="css/bootstrap.min.css" />    
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>    
     <link href="css/custom.css" rel="stylesheet">
     
 </head>
 
-<body >
+<body>
 
-    <div class="container mainPage panel">
+    <div class="container mainPage panel" ng-controller="TabController">
         
     <ol class="breadcrumb">      
       <li class="active">Home</li>
     </ol>
         
-    
-    <div class="row">
         <div class="col-md-3">
             
             <div class="panel panel-default">
                 <div class="panel-heading"><h3>About Us</h3></div>
                 <div class="panel-body">
                 <ul>
-                    <li><a href="">Company Profile</a></li>
-                    <li><a href="">Company Vision</a></li>
-                    <li><a href="">Award</a></li>
-                    <li><a href="">Contact Us</a></li>
+                    <li><a href="" ng-click="selectTab(1)">Company Profile</a></li>
+                    <li><a href="" ng-click="selectTab(2)">Company Vision</a></li>
+                    <li><a href="" ng-click="selectTab(3)">Award</a></li>
                 </ul>
                     
                 </div>
@@ -42,81 +39,42 @@
                         
             
         </div>
-            <div class="col-md-9">              
-
-            <div class="panel panel-default">
-              <div class="panel-body">
-                  
-                  <div class="panel panel-default">
-                    <div class="panel-body">
-                        <h2>Company Profile</h2>
-                          <hr>
-                          <p> Paris van Java Tour & Travel is .....</p>
-                    </div>
-                  </div>
-                  
-                  <div class="panel panel-default">
-                    <div class="panel-body">
-                            <h2>Company Vision</h2>
-                            <hr>
-                            <p> Paris van Java Tour & Travel is .....</p>                  
-                      </div>
-                  </div>
-                  
-                  <div class="panel panel-default">
-                    <div class="panel-body">
-                        <h2>Award</h2>
-                          <hr>
-                          <ul>
-                          <li><img src="" alt="no image">Award 1</li>
-                          <li><img src="" alt="no image">Award 2</li>
-                          <li><img src="" alt="no image">Award 3</li>
-                          </ul>
-                      
-                      
-                      </div>
-                  </div>
-                  
-                  <div class="panel panel-default">
-                    <div class="panel-body">
-                        <h2>Contact Us</h2>
-                          <hr>
-                            <div style="text-align:center">
-                          <iframe style="text-align:center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1980.5647772717073!2d107.58548595783093!3d-6.875077198757954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6907cb54ed7%3A0xd2818893bf0c8d23!2sJl.+Setrasari+Kulon+No.32%2C+Sukasari%2C+Kota+Bandung%2C+Jawa+Barat+40152!5e0!3m2!1sen!2sid!4v1447610237445" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-                          <p style="margin:20px 0 20px 0"> 
-                              <strong>Office Location</strong><br>
-                              Paris van Java Tour & Travel<br>                  
-                              Jalan Setrasari Kulon No. 3x<br>
-                              Sukasari, West Java<br>
-                              40152<br>
-
-
-                          </p>
-                            </div>
-
-                            <ul>
-                                <li>Phone: </li>
-                                <li>Email: </li>
-                            </ul>
-                      
-                      
-                      </div>
-                  </div>
-                  
-                  
-                  
-                  
-                  
-
-                                   
-            </div>    
-
         
+        <div class="col-md-9">              
+
+                  
+          <div class="panel panel-default" ng-show="isSelected(1)">
+            <div class="panel-body">
+                <div class="page-header"><h1>Company Profile</h1></div>
+                <p> Paris van Java Tour &amp; Travel is .....</p>
+            </div>
+          </div>
+
+          <div class="panel panel-default" ng-show="isSelected(2)">
+            <div class="panel-body">
+                    <div class="page-header"><h1>Company Vision</h1></div>
+                    <p> Paris van Java Tour &amp; Travel is .....</p>                  
+              </div>
+          </div>
+
+          <div class="panel panel-default" ng-show="isSelected(3)">
+            <div class="panel-body">
+                    <div class="page-header"><h1>Award</h1></div>
+                  <ul>
+                  <li><img src="" alt="no image">Award 1</li>
+                  <li><img src="" alt="no image">Award 2</li>
+                  <li><img src="" alt="no image">Award 3</li>
+                  </ul>
+
+
+              </div>
+          </div>
+                                   
         </div>
-        </div>
-    </div>
     
+            
+    
+        
     </div>
     
 </body>

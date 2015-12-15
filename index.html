@@ -10,13 +10,17 @@
     
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script type="text/javascript" src="js/angular-route.js"></script>
+    <script type="text/javascript" src="js/ui-bootstrap-tpls-0.14.3.min.js"></script>
     
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/tourPackage.js"></script>
+    <script type="text/javascript" src="js/tabManager.js"></script>
+    <script type="text/javascript" src="js/PackageDetail.js"></script>
+    <script type="text/javascript" src="js/dashboard.js"></script>    
     <!--<link href="css/navbar-fixed-top.css" rel="stylesheet">-->
     
     <link rel="stylesheet" href="css/bootstrap.min.css" />    
-    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css"/>
 
     
     
@@ -24,16 +28,16 @@
     
     
     
-	<title>AngularJS Routing Test Version 2</title>
+	<title>Paris van Java Tour &amp; Travel</title>
 </head>
 
-<body> 
+<body ng-controller="PackageController"> 
     
     <div class="top-image">
-        <img src="#" alt="top image">
+        <img src="" alt="top image">
     </div>
     
-    <nav class="navbar myNavbar">
+    <nav class="navbar">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -43,26 +47,33 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#/">Paris van Java Tour & Travel</a>
+      
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="#/">Home<span class="sr-only">(current)</span></a></li>
-        <li><a href="#/CompanyProfile">About Us</a></li>
+        <li><a href="#/AboutUs">About Us</a></li>
         <li class="dropdown">
-          <a href="#/Package" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Packages <span class="caret"></span></a>
+          <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inbound Packages <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Package A</a></li>
-            <li><a href="#">Package C</a></li>
-            <li><a href="#">Package B</a></li>
+              <div class="dropdown-item" ng-repeat='product in products | limitTo:3'>
+              <li><a href="#/Package/{{product.id}}">{{product.name}}</a></li> 
+              </div>
+                         
           </ul>
         </li>
-        <li><a href="#">Reservation</a></li>
+        <li class="dropdown">
+          <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Outbound Packages <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#/Package">Other package</a></li>
+            <li><a href="#/Package">Other package</a></li>
+          </ul>
+        </li>
         <li><a href="#">News &amp; Media</a></li>        
         <li><a href="#">FAQ</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="#/ContactUs">Contact Us</a></li>
       </ul>
         
     
@@ -70,12 +81,13 @@
         
     
       <ul class="nav navbar-nav navbar-right">
+        <li><a href="#/Dashboard">Dashboard</a></li>
         <li><a href="#/Login">Sign In</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">English<span class="caret"></span></a>
+          <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">English<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Indonesian</a></li>
-            <li><a href="#">English</a></li>
+            <li><a href="">Indonesian</a></li>
+            <li><a href="">English</a></li>
           </ul>
         </li>
       </ul>
@@ -91,7 +103,7 @@
   </div><!-- /.container-fluid -->
 </nav>
     
-        <div ng-view ng-controller="PackageController"></div>
+        <div ng-view></div>
     
     
         <footer class="footer">
@@ -121,7 +133,7 @@
       </div>
     </footer>
     
-    <p class="copyright">Copyright Paris van Java Tour &amp; Travel {{2015+20}}.</p>
+    <p class="copyright">Copyright Paris van Java Tour &amp; Travel 2015.</p>
     
     
     

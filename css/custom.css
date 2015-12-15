@@ -5,19 +5,23 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-    background-color: lightgrey;
+    background-color: darkslategray;
+    
  
 }
 
+
+
 .container{
-    margin-top: 10px;
+    
     //background-color: antiquewhite;
 }
 
-.mainPage{
+#mainPage{
     margin-top: 70px;
+    background-color: white;
+    
 }
-
 
 .footer {
   position: static;
@@ -55,12 +59,8 @@ body {
 	margin-top: 20px;
 }
 
-.myNavbar{
+.navbar {
 	background-color: black;
-	margin-bottom: 0px;
-	position: absolute;
-	width: 100%;
-	z-index: 10;
 	
 }
 
@@ -85,37 +85,41 @@ body {
 	color: white;
 }
 
-.panel{
+.panel-shadow{
     
     box-shadow: 3px 3px grey;
 }
 
 .panel .panel-heading {
-	background-color: darkblue;
+	background-color: slategray;
 	color: white;
-
-
-	
 }
+
+.ads {
+    text-align: center;
+}
+
 
 .top-image {
 	width: 100%;
 	min-height: 100px;
-	background-color: navy;
+	background-color: steelblue;
 }	
 
 .jumbotron{
-	height: 500px;
+	
 	text-align: center;
+    
 }
 
 .jumbotron h1{
 	margin-top: 200px;
+    
 	
 }
 
 .innerpanel{
-    padding: 10px 10px 10px 10px;
+    
     border-color: gainsboro;
 }
 
@@ -125,10 +129,7 @@ body {
 
 .floating-box {
     display: inline-block;
-    width: 150px;
-    height: 75px;
-    margin: 10px;
-    border: 3px solid #73AD21;  
+    margin: 5px;
 }
 
 /* Package Detail Web Page */
@@ -137,7 +138,6 @@ body {
 }
 
 .package-detail > div{
-    margin: 0px 0 25px 0;
     
 }
 
@@ -160,18 +160,25 @@ body {
     
 }
 
-.package-image{
-    width: 520px;
+#mainPageCarousel img{
+    width:auto;
+    height: auto;
+}
+
+#package-galleries img{
+    width: 50px;    
+}
+
+#package-image img{
+    height: 480px;
+    max-width: 700px;
+    padding: 5px 5px 5px 5px;
     
 }
 
-.package-image img{
-    width:inherit;
-}
-
-#packageImage{
-    width: 400px;
-    height: 200px;
+#package-image{
+    text-align: center;
+    
 }
 
 .highlight{
@@ -216,7 +223,6 @@ ul.square-list{
 }
 
 
-
 /*Sign in form*/
 
 div.fader{
@@ -250,7 +256,22 @@ div.sign-in input[type="text"], input[type="password"]{
     width: 200px;
 }
 
+.center {
+    text-align: center;
+}
 
+.align-left {
+    text-align: left;
+}
+
+#AboutUs  {
+    background-color: cadetblue;
+    color: white;
+}
+
+#AboutUs img {
+    width: 350px;
+}
 
 
 /*Registration*/
@@ -280,6 +301,52 @@ input.mediumform{
 
 input.smallform{
     width: 100px;
+}
+
+
+
+/*Landing Page*/
+
+.landingpage-item {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 20px 10px 20px 10px;
+    text-align: center;
+}
+
+#welcome {
+    background-color:darkslategray;
+    color: white;
+}
+
+#packages {
+    
+}
+
+.dropdown-item {
+    margin: 2px 20px 2px 20px;
+}
+
+.dropdown-item a{
+    color: black;
+}
+
+#packages-title {
+    background-color: firebrick;
+}
+
+#customer-service {
+    background-color:darkmagenta;
+}
+
+#customer-service {
+    color: white;
+}
+
+#products .thumbnail{
+    height:360px;
+    width:260px;
+    
 }
 
 

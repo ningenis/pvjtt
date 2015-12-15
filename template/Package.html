@@ -4,145 +4,254 @@
 
 <head>
 
-
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="js/angular.min.js"></script>
-<script type="text/javascript" src="app.js"></script>
-<script type="text/javascript" src="tourPackage.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/tourPackage.js"></script>
+<script type="text/javascript" src="js/tabManager.js"></script>
     <!--<link href="css/navbar-fixed-top.css" rel="stylesheet">-->
     
-<link rel="stylesheet" href="css/bootstrap.min.css" />    
-<link href="css/custom.css" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.min.css" />   
+<link rel="stylesheet" href="css/custom.css" />   
+
+    
     
 </head>
 
-<body >
+<body>
 
-    <div class="container mainPage panel">
-        
+    <div class="container mainPage panel" ng-controller="PackageController">
+        {{getProduct()}}
         <ol class="breadcrumb">      
           <li class="active">Home</li>
         </ol>
+        
+        <div class="page-header">
+            <h1 id="description">{{product.name}}</h1>
+        </div>                      
 
 
         <div class="row">
-            <div class="col-md-3">
-
+            
+            <div class="col-md-9" ng-controller="GalleryController"> 
+                {{setGalleries(product)}}
+                
                 <div class="panel panel-default">
-                    <div class="panel-heading"><h3>Packages</h3></div>
-                    <div class="panel-body">
-                    <ul>
-                        <li><a href="">Package A</a></li>
-                        <li><a href="">Package B</a></li>
-                        <li><a href="">Package C</a></li>
-                        <li><a href="">Package D</a></li>
-                    </ul>
-
+                    <div id="package-image" class="panel-body">  
+                    <img ng-src="image/{{thumbnail}}" alt="not found">                       
                     </div>
                 </div>
                 
-                <div class="panel panel-default">
-                    <div class="panel-heading"><h3>Navigation</h3></div>
+                <div class="panel panel-default" id="package-galleries">
                     <div class="panel-body">
-                    <ul>
-                        <li><a href="#description">Tour Description</a></li>
-                        <li><a href="#itinerary">Itinerary</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#reservation">Reservation</a></li>
-                    </ul>
+                        
+                        <div class="col-md-1">
+                        
+                            <h4>Gallery</h4>                      
+                    
+                        </div>
+                    <div class="col-md-11">                      
+                        
+                        <div ng-repeat="gallery in galleries" class="floating-box">
+                        <div>
+                            <a href="" ng-click="setThumbnail(gallery)">
+                                <img ng-src="image/{{gallery}}" alt="not found">
+                            </a>
 
+                        </div>                    
+                    
                     </div>
+                    
+                    
+                    </div>
+                    
+                    
+                    
+                    </div>
+                    
+                
                 </div>
-
-
-
-
-
-
+                
+                
+              
+                
+                
+                
+                
             </div>
-            <div class="col-md-9"s>
+            
+            <div class="col-md-3">
                 <div class="panel panel-default">
-                    <div class="panel-body package-detail">
+                    <div class="panel-body">
+                        <ul>
+                            <li>Tour Code: BTP6D5N</li>
+                            <li>Tour Type Available: 6 seater van &amp; 12 seater ELF</li>
+                            <li>Start in: Bandung</li>
+                            <li>Finish in: Bandung</li>
+                            <li>Price:</li>             
+                        </ul>   
+                    </div>                    
+                </div>
+            </div>
+            
+            
+        </div>
+        
+        <div class="row" ng-controller="TabController">
+            
+            <div class="col-md-12">
+                    <div class="package-detail">
 
-                        <h2 id="description">Bandung Tour Package (6D5N)</h2>
-                        <hr>
                         
-                        <div class="package-header">
-                            <div class="package-image">  
-                                <img src="image/forest.jpg">                       
-                            </div>
+                        <ul class="nav nav-tabs">
+                            <li role="presentation" ng-class="{active:isSelected(1)}"><a href="" ng-click="selectTab(1)">Tour Description</a></li>
+                            <li role="presentation" ng-class="{active:isSelected(2)}"><a href="" ng-click="selectTab(2)">Itinerary</a></li>
+                            <li role="presentation" ng-class="{active:isSelected(4)}"><a href="" ng-click="selectTab(4)">Reservation</a></li>
+                            <li role="presentation" ng-class="{active:isSelected(5)}"><a href="" ng-click="selectTab(5)">Terms &amp; Conditions</a></li>
 
-                            <div class="package-info">
-                                <ul>
-                                    <li>Tour Code: BTP6D5N</li>
-                                    <li>Tour Type Available: 6 seater van &amp; 12 seater ELF</li>
-                                    <li>Start in: Bandung</li>
-                                    <li>Finish in: Bandung</li>
-                                    <li>Price:</li>             
-                                </ul>   
-                                <div style="text-align:center">
-                                    <b>6 seater van: <br>3.068.334 IDR/pax
-(About 834 MYR/308 SGD/233 USD) 
-                                        <br>12 Seater ELF<br> 3.136.667 IDR/pax
-(About 315 MYR/315 SGD/238 USD)</b>
+                        </ul>
+
+
+                        <div class="panel panel-default" ng-show="isSelected(1)">
+                            <div class="panel-body">
+                                <div class="page-header"><h2>Tour Description</h2></div>
+                                <p>
+                                    {{product.descriptionLong}}                    
+
+                                </p>
+                                
+                                
+                            </div>
+                            
+                        </div>        
+
+
+                        <div class="panel panel-default" ng-show="isSelected(2)"> 
+                            <div class="panel-body">
+                                <div class="page-header"><h2>Itinerary</h2></div>
+
+                                <ul class=square-list ng-repeat="itinerary in product.itineraries">
+                                    <li>{{itinerary}}</li>
+                                </ul>
+                            </div>
+                        </div>                        
+
+                        <div class="panel panel-default" ng-show="isSelected(4)">
+                            
+                            <div class="reservation-form panel-body">
+                                
+                                <div class="page-header"><h2>Reservation Form</h2></div>
+                                
+                                <form class="form-horizontal">
+                                  <div class="form-group">
+                                    <label for="inputFirstName" class="col-sm-2 control-label">First Name</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+                                    </div>
+                                  </div>
                                     
+                                <div class="form-group">
+                                    <label for="inputLastName" class="col-sm-2 control-label">Last Name</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+                                    </div>
                                 </div>
-                                <div style="text-align:center">
-                                    <button>Reserve Now</button>
+                                    
+                                <div class="form-group">
+                                    <label for="inputAddress" class="col-sm-2 control-label">Address</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control" id="inputAddress" placeholder="Address">
+                                    </div>
                                 </div>
-                            </div>
+                                    
+                                <div class="form-group">
+                                    <label for="inputPhone" class="col-sm-2 control-label">Phone Number</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control" id="inputPhone" placeholder="Phone Number">
+                                    </div>
+                                </div>   
+                                    
+                                <div class="form-group">
+                                    <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+                                    <div class="col-sm-10">
+                                      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                    </div>
+                                </div>   
+                                    
+                                <div class="form-group form-inline">
+                                    <label class="col-sm-2 control-label">Number of Person</label>
+                                    <div class="col-sm-10 ">
+                                        <div class="form-group">
+                                            <label for="adult">Adult</label>
+                                            <input type="number" class="form-control" id="adult">
+                                          </div>
+                                        <div class="form-group">
+                                            <label for="children">Children</label>
+                                            <input type="number" class="form-control" id="children">
+                                        </div>
+                                      
+                                    </div>
+                                </div>  
+                                    
+                                <div class="form-group">
+                                    <label for="inputDate" class="col-sm-2 control-label">Date</label>
+                                    <div class="col-sm-10">
+                                      <input type="date" class="form-control" id="inputDate" placeholder="">
+                                    </div>
+                                </div>  
+     
+                                <div class="form-group">
+                                    <label for="inputInquiry" class="col-sm-2 control-label">Special Inquiry</label>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" rows="3" id="inputInquiry" placeholder=""></textarea>
+                                    </div>
+                                    
+                                </div> 
+                                    
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Payment Method</label>
+                                    <div class="col-sm-10">
+                                        <div class="radio">
+                                          <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                            Payment 1
+                                          </label>
+                                        </div>
+                                        <div class="radio">
+                                          <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                           Payment 2
+                                          </label>
+                                        </div>
+                                        <div class="radio">
+                                          <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                                           Payment 3
+                                          </label>
+                                        </div>
+                                            </div>
+                                </div>  
+                                    
+                                <div class="form-group">
+                                    <label for="captcha" class="col-sm-2 control-label">Captcha</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control" id="captcha" placeholder="">
+                                    </div>
+                                </div> 
+                
+                                
+                                  
+                                  
+                                  <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                      <button type="submit" class="btn btn-default">Reserve</button>
+                                    </div>
+                                  </div>
+                                </form>
+                                
 
-                        </div>
-                        
-
- 
-
-
-                        <div class="panel innerpanel package-description">
-                            <h3 id="description">Tour Description</h3>
-                            <hr>
-                            <p>
-                                Shopping in Bandung is quite an affair and there are many markets around the city to fulfill your shopping needs. Discover your 5Days 4 Nites in Bandung. Bandung is one of the best place in entire Indonesia to have inexpensive but quality food. Make sure that you have not missed on getting experience of the city life that goes on in Bandung before leaving.
-
-
-                            </p></div>        
-
-
-                        <div class="panel innerpanel">
-                            <h3>Itinerary</h3>
-                            <hr>
-                            <ul class=square-list>
-                                <li><img src="" alt="no image">Day1 - Arrival Bandung
-    Meet our greet representative, Bandung city tour, Hotel Check-in.</li>
-                                <li><img src="" alt="no image">Day2 - Bandung Volcano Tour and Shopping
-    Visit Tangkuban Perahu, Cihideung Flower Village, Shopping in Bandung</li>
-                                <li><img src="" alt="no image">Day3 - Shopping Day
-Pasar Baru, Dago Factory Outlets, and Riau Factory Outlets.</li>
-                                <li><img src="" alt="no image">Day4 - Bandung Tour and Art Culture
-Paris van Java, Visit Saung Angklung Udjo Performance</li>
-                                <li><img src="" alt="no image">Day5 - Bandung &amp; Theme Park Tour
-Visit Trans Studio and Bandung Tour</li>
-                                <li><img src="" alt="no image">Day6 - Departure from Bandung
-Free tour, and departure at Bandung airport.</li>
-                            </ul>                    
-                        </div>
-
-                        <div class="panel innerpanel">
-                          <h3>Gallery</h3>
-                          <hr>
-                              <div class="floating-box">Pic Gallery</div>
-                              <div class="floating-box">Pic Gallery</div>
-                              <div class="floating-box">Pic Gallery</div>
-                              <div class="floating-box">Pic Gallery</div>
-                              <div class="floating-box">Pic Gallery</div>
-                        </div>
-
-                        <div class="panel innerpanel ">
-                            <div class="reservation-form">
-                                <h3 id="reservation">Reservation</h3>
-                                <hr>
-
+                                <!--
                                 <form class="reservation-form">
                                     <div>
                                         <div style="display:inline-block">First Name</div>
@@ -174,28 +283,96 @@ Free tour, and departure at Bandung airport.</li>
                                         <textarea name="inquiry">    </textarea>                       
                                     </div>
                                     <div>
+                                        <div style="display:inline-block">Method of Payment</div>
+                                        <label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+</label>                      
+                                    </div>
+                                    <div>
                                         <div style="display:inline-block">Captcha</div>
                                         <input class="smallform" type="text" name="Captcha">                           
                                     </div>
                                     
                                     <div style='text-align:center'> <input type="submit" value="Reserve"> </div>
-                                    
-                                    
-                                        
-                        
-
                                 </form> 
-
+                                -->
                             </div>  
-
-
                         </div>     
+                        
+                        <div class="panel panel-default" ng-show="isSelected(5)">
+                            <div class="panel-body">
+                                <div class="page-header"><h2>Terms &amp; Conditions</h2></div>
+                                <ul>
+                                    <li>Condition 1</li>
+                                    <li>Condition 2</li>
+                                    <li>Condition 3</li>
+                                </ul>
+                            </div>
+                        </div>  
 
 
     
                     </div>
-                </div>    
+                </div>
+                
+                <!-- Other Package -->
+                
+                <div id="products" class="panel panel-default" ng-controller="PackageListController">
+              
+                <div class="panel-body">
+                    <div class="page-header"><h1>Other Packages {{str}}</h1></div>   
+                    <p>
+                        
+                    </p>
+
+                        <div class="row">                    
+                            <div class="col-sm-6 col-md-3" style="text-align:center" ng-repeat="product in viewProducts">
+                                <div class="thumbnail">
+                                  <img ng-src="image/{{getImage(product)}}" alt="...">
+                                  <div class="caption">
+                                    <h3>{{product.name}}</h3>
+                                    <p><a href="#/Package/{{product.id}}" class="btn btn-default" role="button">Details</a></p>
+                                  </div>
+                                </div>
+                            </div>           
+
+                        </div>
+
+                      <nav style="text-align:center">
+                      <ul class="pagination">
+                        <li>
+                          <a href="" aria-label="Previous" ng-click="previousPage()">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li>
+                          <a href="" aria-label="Next" ng-click="nextPage()">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+            </div>    
+
+        
             </div>
+                <!-- Other Package End -->
+        
+        
+        </div>
+        
+        <div class="row">
+            <div class="ads">
+                <a href=""><img src="image/Advertise-Here-1-2.jpg"></a> 
+            </div>
+                   
         </div>
     </div>
     
