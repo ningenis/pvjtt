@@ -135,7 +135,7 @@
 			"file": "prototype/template.html",
 			"settings":
 			{
-				"buffer_size": 1170,
+				"buffer_size": 1216,
 				"line_ending": "Windows"
 			}
 		}
@@ -185,6 +185,26 @@
 	],
 	"file_history":
 	[
+		"/C/Users/ASUS/Desktop/RPP/Bahan Praktikum OOP Dasar/Calculator.java",
+		"/C/Users/ASUS/Desktop/RPP/Bahan Praktikum OOP Dasar/P02-18211002-140213/GameCharacter.java",
+		"/C/Users/ASUS/Desktop/RPP/Bahan Praktikum OOP Dasar/P02-18211002-140213/mainrectangle.java",
+		"/C/Users/ASUS/Desktop/RPP/Bahan Praktikum OOP Dasar/Praktikum IF2033/P02-18211036-140213/Game.java",
+		"/C/Users/ASUS/Desktop/RPP/Bahan Praktikum OOP Dasar/Praktikum IF2033/P02-18211036-140213/Point.java",
+		"/C/Users/ASUS/Desktop/RPP/Bahan Praktikum OOP Dasar/Praktikum IF2033/P02-18211036-140213/Rectangle.java",
+		"/C/Users/ASUS/Desktop/RPP/Bahan Praktikum OOP Dasar/Praktikum IF2033/P02-18211036-140213/Player.java",
+		"/C/Users/ASUS/Desktop/RPP/Bahan Praktikum OOP Dasar/Praktikum IF2033/P02-18211036-140213/Main.java",
+		"/C/Users/ASUS/Desktop/RPP/Bahan Praktikum OOP Dasar/Praktikum IF2033/P02-18211036-140213/GameCharacter.java",
+		"/C/Users/ASUS/Desktop/RPP/Bahan Praktikum OOP Dasar/Pra02-18211002-140213/Bajaj.java",
+		"/C/Users/ASUS/Desktop/RPP/Bahan Praktikum OOP Dasar/Pra02-18211002-140213/Motor.java",
+		"/C/Users/ASUS/Desktop/RPP/Bahan Praktikum OOP Dasar/Pra02-18211002-140213/Mobil.java",
+		"/C/Users/ASUS/Desktop/RPP/Bahan Praktikum OOP Dasar/Pra02-18211002-140213/mainkendaraan.java",
+		"/C/Users/ASUS/Desktop/RPP/Bahan Praktikum OOP Dasar/Praktikum IF2033/P02-18211036-140213/Dwarf.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Praktikum/Latihan Praktikum 1/PartTimeEmployee.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Praktikum/Latihan Praktikum 1/DriverEmployee.java",
+		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Praktikum/Latihan Praktikum 1/Employee.java",
+		"/C/Users/ASUS/Desktop/RPP/Bahan Praktikum OOP Dasar/Main.java",
+		"/C/Users/ASUS/Desktop/RPP/Bahan Praktikum OOP Dasar/main_classTest.java",
+		"/C/xampp/htdocs/FAPOR/public/index.html",
 		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/intrface.java",
 		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/itrfc1.java",
 		"/F/Materi Kuliah/Pemrograman Berorientasi Objek/Program Kecil/ellips.java",
@@ -267,7 +287,6 @@
 		"/C/xampp/htdocs/arduino/style.css",
 		"/F/Materi Kuliah/Tugas Akhir/Revisi Seminar",
 		"/C/xampp/htdocs/arduino/table.css",
-		"/C/xampp/htdocs/FAPOR/public/index.html",
 		"/C/xampp/htdocs/coba/index.php",
 		"/C/xampp/htdocs/coba/get_json.php",
 		"/C/xampp/htdocs/arduino/graf.html",
@@ -293,26 +312,7 @@
 		"/C/Users/ASUS/Downloads/led.html",
 		"/C/xampp/htdocs/FAPOR/public/notfound.html",
 		"/C/xampp/htdocs/FAPOR/public/under-cs.html",
-		"/C/xampp/htdocs/FAPOR/public/landing.html",
-		"/C/xampp/htdocs/FAPOR/public/kolom-3.html",
-		"/C/xampp/htdocs/FAPOR/public/kolom-2.html",
-		"/C/xampp/htdocs/FAPOR/public/kolom-1.html",
-		"/C/xampp/htdocs/FAPOR/public/galeri.html",
-		"/C/xampp/htdocs/FAPOR/public/error.html",
-		"/C/xampp/htdocs/FAPOR/public/berita.html",
-		"/C/xampp/htdocs/FAPOR/public/navigasi.html",
-		"/C/xampp/htdocs/FAPOR/source/less/halaman-kolom.less",
-		"/C/xampp/htdocs/FAPOR/public/nav-berita.html",
-		"/C/xampp/htdocs/FAPOR/public/kolom-3v2.html",
-		"/C/xampp/htdocs/FAPOR/public/kolom-1v2.html",
-		"/C/xampp/htdocs/FAPOR/source/less/ticker.less",
-		"/C/xampp/htdocs/FAPOR/public/css/bootstrap.css.map",
-		"/C/xampp/htdocs/FAPOR/source/less/error.less",
-		"/C/xampp/htdocs/FAPOR/source/less/under-cs.less",
-		"/C/xampp/htdocs/FAPOR/public/js/jquery.countdown.min.js",
-		"/C/xampp/htdocs/FAPOR/source/less/footer.less",
-		"/C/xampp/htdocs/FAPOR/public/footer.html",
-		"/C/xampp/htdocs/FAPOR/source/less/gambar.less"
+		"/C/xampp/htdocs/FAPOR/public/landing.html"
 	],
 	"find":
 	{
@@ -377,15 +377,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1170,
+						"buffer_size": 1216,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1108,
-								1108
+								255,
+								255
 							]
 						],
 						"settings":
