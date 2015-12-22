@@ -1,0 +1,38 @@
+body{
+	background-color:#333333;
+}
+
+#carousel img{
+	width: 1000px;
+}
+
+#gallery img{
+	height: 40px;
+}
+
+#gallery-thumbnail img{
+	height: 500px;
+}
+
+#gallery-thumbnail {
+	
+	text-align: center;
+}
+
+div.package-list-item{
+	margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 200px;
+    height: 250px;
+}
+
+div.package-list-item div.caption{
+	text-align: center;
+}
+
+div.package-list-item img{
+	width:200px;
+}
+
+

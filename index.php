@@ -5,9 +5,8 @@
     
     <meta charset="UTF-8">
     
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-    
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>  
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script type="text/javascript" src="js/angular-route.js"></script>
     <script type="text/javascript" src="js/ui-bootstrap-tpls-0.14.3.min.js"></script>
@@ -35,6 +34,7 @@
     
     <div class="top-image">
         <img src="" alt="top image">
+        
     </div>
     
     <nav class="navbar">
@@ -104,6 +104,7 @@
 </nav>
     
         <div ng-view></div>
+  
     
     
         <footer class="footer">
@@ -114,6 +115,9 @@
                     <p>Jalan Setrasari Kulon No. 32</p>
                     <p>Sukasari bandung 40152</p>
                     <p>West Java - Indonesia</p>
+                    
+                      
+    
                 </div>
                 <div class="col-md-1">
                     Site Map                    
@@ -134,6 +138,7 @@
     </footer>
     
     <p class="copyright">Copyright Paris van Java Tour &amp; Travel 2015.</p>
+    
     
     
     

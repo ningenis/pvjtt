@@ -45,10 +45,14 @@
     }]);
     
     
-    app.controller('PackageController', ['$scope', '$routeParams', function($scope, $routeParams) {
+    app.controller('PackageController', ['$scope', '$http', '$log', '$routeParams', function($scope, $http, $log, $routeParams) {
         $scope.param = $routeParams.param;          
         $scope.products = tours;
         $scope.product;
+        $scope.products2;
+        
+        
+        
         //Nanti diganti dengan akses ke database
         $scope.getProduct = function(){
             var pr;
@@ -62,11 +66,20 @@
             $scope.product = pr;
         };
         
+        $http.get('js/getPackageDetail.php')
+            .success(function(data){
+                $scope.products2 = data;
+            
+        })
+            .error(function(err){
+                $log.error(err);
+        });
+        
         
         
     }]);
     
-    app.controller('GalleryController', ['$scope', function($scope) {
+    app.controller('GalleryController', ['$scope', '$timeout', function($scope, $timeout) {
         $scope.galleries = tours[0].imageURL;
         $scope.thumbnail;
         
@@ -83,9 +96,7 @@
            $scope.thumbnail = url;
         };
         
-        $scope.thumbnail = $scope.galleries[0];
-        
-        
+        $timeout (function(){$scope.thumbnail = $scope.galleries[0];}, 50);    
         
         
     }]);
