@@ -54,6 +54,6 @@ $route['package'] = 'package';
 $route['dashboard'] = 'dashboard';
 $route['about'] = 'about';
 $route['contact'] = 'contact';
-$route['package/(:any)'] = 'package/view_package/$1';
+$route['package/(:any)'] = 'package/viewPackage/$1';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

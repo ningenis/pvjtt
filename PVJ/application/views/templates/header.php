@@ -1,12 +1,13 @@
-<!DOCTYPE >
+<!DOCTYPE html>
 
 <html>
+
+<head>
+	
 	<link rel="stylesheet" type="text/css" href="http://localhost/pvj/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="http://localhost/pvj/css/pvj.css">
 	<script src="http://localhost/pvj/js/jquery-2.1.4.min.js"></script>
 	<script src="http://localhost/pvj/js/bootstrap.min.js"></script>
-<head>
-	
 
 </head>
 
@@ -22,7 +23,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="home">Brand</a>
+      <a class="navbar-brand" href="/pvj">Brand</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

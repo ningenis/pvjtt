@@ -3,15 +3,23 @@ body{
 }
 
 #carousel img{
-	width: 1000px;
+	width: 100%;
+	height: auto;
+}
+
+div#gallery {
+	
+	
 }
 
 #gallery img{
 	height: 40px;
+
 }
 
 #gallery-thumbnail img{
 	height: 500px;
+	max-width: 90%;
 }
 
 #gallery-thumbnail {
@@ -27,6 +35,12 @@ div.package-list-item{
     height: 250px;
 }
 
+div.package-list-item img{
+
+    width: 100%;
+    height: 120px;
+}
+
 div.package-list-item div.caption{
 	text-align: center;
 }
@@ -34,5 +48,17 @@ div.package-list-item div.caption{
 div.package-list-item img{
 	width:200px;
 }
+
+div#footer {
+	background-color:#445588 ;
+	color:#FFFFFF;
+	padding: 20px 20px 20px 20px;
+}
+
+div.center{
+	text-align:center;
+}
+
+
 
 

@@ -18,16 +18,21 @@ class Package extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
+	 
+	//
+	function index()
 	{
 		$this->load->view('templates/header');
 		$this->load->view('package_detail_page');
+		$this->load->view('templates/footer');
 	}
 	
 	
-	public function view_package()
+	function viewPackage($tourCode)
 	{
+		$data['code'] = $tourCode;
+		
 		$this->load->view('templates/header');
-		$this->load->view('package_detail_page');
+		$this->load->view('package_detail_page', $data);
 	}
 }

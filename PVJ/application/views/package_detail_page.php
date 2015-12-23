@@ -3,24 +3,55 @@
 		<h1>Package Name</h1>
 	</div>
 	
-	<div id="gallery-thumbnail" class="md-col-12 panel panel-default">
-		<div class="panel-body">
-			<img src="img/pasupati.jpg"/>
+	<div class="row">
+		<div class="col-md-9">
+			
+			<!-- Thumbnail -->
+			<div id="gallery-thumbnail" class="md-col-12 panel panel-default">
+				<div class="panel-body">
+					<img src="img/pasupati.jpg"/>
+				</div>
+				
+			</div>
+	
+			<!-- Galleries -->	
+			<div id="gallery" class="md-col-12 panel panel-default">
+				<div class="panel-body">
+					Gallery : 
+					<a href="#"><img src="img/pasupati.jpg"/></a>
+
+					
+				</div>				
+			</div>
+			
+		</div>
+		
+		<div class="col-md-3">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<b>Tour Code :</b> Code<br/>
+					<b>Start in :</b> Start<br/>
+					<b>Finish in  :</b> Finish<br />	
+					<b>Price :</b>
+					<div class="center">
+						
+						Start from<br>
+						<strong>Rp 5.000.000,00</strong>
+						
+					</div>		
+				</div>
+			</div>
+			
+			
 		</div>
 		
 	</div>
 	
-	<div id="gallery" class="md-col-12 panel panel-default">
-		<div class="panel-body">
-			<a href="#"><img src="img/pasupati.jpg"/></a>
-		</div>
+	<div class="row">
 		
+			<div class="col-md-9">
 		
-	</div>
-	
-	
-	
-	<div class="panel panel-default">
+		<div class="panel panel-default">
 		<div class="panel-body">
 			
 			<!-- Nav tabs -->
@@ -63,6 +94,20 @@
 	</div>
 	
 	<?php include 'application/views/templates/package_list.php';?>
+		
+	</div>
+
+		
+		
+	</div>
+	
+
+	
+	
+	
+	
+	
+	
 
 
   
