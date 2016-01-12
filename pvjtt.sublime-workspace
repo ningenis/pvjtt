@@ -132,6 +132,22 @@
 	"buffers":
 	[
 		{
+			"file": "prototype/form.html",
+			"settings":
+			{
+				"buffer_size": 2474,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "prototype/send_form_email.php",
+			"settings":
+			{
+				"buffer_size": 2881,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "prototype/template.html",
 			"settings":
 			{
@@ -368,13 +384,71 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "prototype/template.html",
+					"file": "prototype/form.html",
 					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2474,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "prototype/send_form_email.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2881,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2881,
+								2881
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1696.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "prototype/template.html",
+					"semi_transient": true,
 					"settings":
 					{
 						"buffer_size": 1216,
@@ -384,8 +458,8 @@
 						"selection":
 						[
 							[
-								255,
-								255
+								1077,
+								1077
 							]
 						],
 						"settings":
